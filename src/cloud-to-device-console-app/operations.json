@@ -12,7 +12,7 @@
         {
             "opName": "pipelineTopologySet",
             "opParams": {
-                "pipelineTopologyUrl": "https://raw.githubusercontent.com/Azure/video-analyzer/main/pipelines/live/topologies/httpExtensionOpenVINO/topology.json"
+                "pipelineTopologyFile": "topology.json"
             }
         },
         {
@@ -25,15 +25,15 @@
                     "parameters": [
                         {
                             "name": "rtspUrl",
-                            "value": "rtsp://rtspsim:554/media/camera-300s.mkv"
+                            "value": "rtsp://192.168.61.149:8554/cam"
                         },
                         {
                             "name": "rtspUserName",
-                            "value": "testuser"
+                            "value": "non-use"
                         },
                         {
                             "name": "rtspPassword",
-                            "value": "testpassword"
+                            "value": "non-use"
                         }
                     ]
                 }
