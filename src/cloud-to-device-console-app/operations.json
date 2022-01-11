@@ -12,7 +12,7 @@
         {
             "opName": "pipelineTopologySet",
             "opParams": {
-                "pipelineTopologyUrl": "https://<update_url_to_topology.json>"
+                "pipelineTopologyUrl": "https://raw.githubusercontent.com/Azure/video-analyzer/main/pipelines/live/topologies/httpExtensionOpenVINO/topology.json"
             }
         },
         {
@@ -20,8 +20,8 @@
             "opParams": {
                 "name": "Sample-Pipeline-1",
                 "properties": {
-                    "topologyName": "TopologyName",
-                    "description": "Sample pipeline description",
+                    "topologyName": "InferencingWithOpenVINO",
+                    "description": "Demo object detection using OpenVINO Server extension",
                     "parameters": [
                         {
                             "name": "rtspUrl",
@@ -70,7 +70,7 @@
         {
             "opName": "pipelineTopologyDelete",
             "opParams": {
-                "name": "TopologyName"
+                "name": "InferencingWithOpenVINO"
             }
         },
         {

@@ -51,7 +51,7 @@
           }
         },
         "modules": {
-          "avaedge": {
+          "ovms-demo": {
             "version": "1.0",
             "type": "docker",
             "status": "running",
@@ -124,14 +124,14 @@
       "properties.desired": {
         "schemaVersion": "1.0",
         "routes": {
-          "AVAToHub": "FROM /messages/modules/avaedge/outputs/* INTO $upstream"
+          "AVAToHub": "FROM /messages/modules/ovms-demo/outputs/* INTO $upstream"
         },
         "storeAndForwardConfiguration": {
           "timeToLiveSecs": 7200
         }
       }
     },
-    "avaedge": {
+    "ovms-demo": {
       "properties.desired": {
         "applicationDataDirectory": "/var/lib/videoanalyzer",
         "ProvisioningToken": "$AVA_PROVISIONING_TOKEN",
